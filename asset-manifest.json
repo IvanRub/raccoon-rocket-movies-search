@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/raccoon-rocket-movies-search/static/css/main.61b263f2.css",
+    "main.js": "/raccoon-rocket-movies-search/static/js/main.c5c83de2.js",
+    "static/js/787.9ff7bfd7.chunk.js": "/raccoon-rocket-movies-search/static/js/787.9ff7bfd7.chunk.js",
+    "static/media/image-3.svg": "/raccoon-rocket-movies-search/static/media/image-3.b92825b8bd166dfad530ebc9eb3bf3dc.svg",
+    "static/media/image-1.svg": "/raccoon-rocket-movies-search/static/media/image-1.031dbe473b02f480451fee1cd70f314e.svg",
+    "static/media/image-4.svg": "/raccoon-rocket-movies-search/static/media/image-4.b26aab4bbf6804f89d4dfb878a8222bf.svg",
+    "static/media/Roboto-Medium.ttf": "/raccoon-rocket-movies-search/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/raccoon-rocket-movies-search/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/raccoon-rocket-movies-search/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/image-2.svg": "/raccoon-rocket-movies-search/static/media/image-2.4e192c7dd5eec0d88696c7962d2dc77d.svg",
+    "static/media/Image.svg": "/raccoon-rocket-movies-search/static/media/Image.774c08e6f1a223dc0a559b210a6acd72.svg",
+    "static/media/Icon-Search.svg": "/raccoon-rocket-movies-search/static/media/Icon-Search.a669bed3741e46c1905719ceeffc257c.svg",
+    "static/media/Icon-Wrapper.svg": "/raccoon-rocket-movies-search/static/media/Icon-Wrapper.b75948978b1cc3da17c4f1422720a228.svg",
+    "static/media/Icon-Wrapper-check.svg": "/raccoon-rocket-movies-search/static/media/Icon-Wrapper-check.ba39f844c6e17bb582af61613b255916.svg",
+    "index.html": "/raccoon-rocket-movies-search/index.html",
+    "main.61b263f2.css.map": "/raccoon-rocket-movies-search/static/css/main.61b263f2.css.map",
+    "main.c5c83de2.js.map": "/raccoon-rocket-movies-search/static/js/main.c5c83de2.js.map",
+    "787.9ff7bfd7.chunk.js.map": "/raccoon-rocket-movies-search/static/js/787.9ff7bfd7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61b263f2.css",
+    "static/js/main.c5c83de2.js"
+  ]
+}
