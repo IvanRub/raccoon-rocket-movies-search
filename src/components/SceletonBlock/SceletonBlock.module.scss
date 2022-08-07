@@ -1,0 +1,59 @@
+@import './../../styles/colors';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.block {
+  @keyframes loader {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+
+  position: relative;
+  min-height: 22px;
+  background: $button-secondary-hover-color;
+  border-radius: 4px;
+
+  animation: loader 1.5s infinite;
+}
+
+.width213 {
+  width: 213px;
+}
+
+.width529 {
+  width: 529px;
+}
+
+.width372 {
+  width: 372px;
+}
+

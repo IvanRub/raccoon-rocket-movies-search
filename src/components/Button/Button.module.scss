@@ -1,0 +1,25 @@
+@import './../../styles/colors';
+@import './../../styles/shadows';
+
+.btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 15px;
+    gap: 10px;
+  
+    background: $neutral-color;
+  
+    border: 1px solid $border-color;
+  
+    box-shadow: $button-secondary-shadow;
+    border-radius: 2px;
+
+    &:hover {
+      color: $character-text-hover-color;
+      border-color: $character-text-hover-color;
+      cursor: pointer;
+    }
+  }

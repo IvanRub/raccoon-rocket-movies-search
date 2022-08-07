@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url(./fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(./fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+$app-font-stack: RobotoRegular, Helvetica, sans-serif;
+$app-font-header: RobotoMedium;

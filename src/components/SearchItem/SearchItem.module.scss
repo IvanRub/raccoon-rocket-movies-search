@@ -1,0 +1,50 @@
+@import './../../styles/colors';
+
+$image-background-color: #FAFAFA;
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.image {
+   width: 112px;
+   height: 112px;
+   position: relative;
+   background: $image-background-color;
+ }
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.marks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.description {
+  color: $character-text-color;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  width: 28px;
+
+  & button {
+    padding: 4px 6px;
+  }
+}
