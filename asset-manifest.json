@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/raccoon-rocket-movies-search/static/css/main.61b263f2.css",
-    "main.js": "/raccoon-rocket-movies-search/static/js/main.c5c83de2.js",
+    "main.js": "/raccoon-rocket-movies-search/static/js/main.7523928f.js",
     "static/js/787.9ff7bfd7.chunk.js": "/raccoon-rocket-movies-search/static/js/787.9ff7bfd7.chunk.js",
     "static/media/image-3.svg": "/raccoon-rocket-movies-search/static/media/image-3.b92825b8bd166dfad530ebc9eb3bf3dc.svg",
     "static/media/image-1.svg": "/raccoon-rocket-movies-search/static/media/image-1.031dbe473b02f480451fee1cd70f314e.svg",
@@ -16,11 +16,11 @@
     "static/media/Icon-Wrapper-check.svg": "/raccoon-rocket-movies-search/static/media/Icon-Wrapper-check.ba39f844c6e17bb582af61613b255916.svg",
     "index.html": "/raccoon-rocket-movies-search/index.html",
     "main.61b263f2.css.map": "/raccoon-rocket-movies-search/static/css/main.61b263f2.css.map",
-    "main.c5c83de2.js.map": "/raccoon-rocket-movies-search/static/js/main.c5c83de2.js.map",
+    "main.7523928f.js.map": "/raccoon-rocket-movies-search/static/js/main.7523928f.js.map",
     "787.9ff7bfd7.chunk.js.map": "/raccoon-rocket-movies-search/static/js/787.9ff7bfd7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61b263f2.css",
-    "static/js/main.c5c83de2.js"
+    "static/js/main.7523928f.js"
   ]
 }
