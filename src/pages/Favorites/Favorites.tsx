@@ -41,7 +41,7 @@ export const Favorites: React.FC = () => {
             {!loading && !error && !!bookmarks.length && (
                 <div className={styles.list}>
                     {bookmarks.map((bookmark, index) => (
-                        <SearchItem key={bookmark.id + index} {...bookmark} />
+                        <SearchItem key={`${bookmark.id}${index}`} {...bookmark} />
                     ))}
                 </div>
             )}

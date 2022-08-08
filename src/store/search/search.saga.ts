@@ -1,11 +1,11 @@
-import { call, all, put, takeLatest, select } from 'redux-saga/effects';
+import {call, all, put, takeLatest, select} from 'redux-saga/effects';
 
 import {searchActions} from './search.slice';
 import {RootState} from "../rootReducer";
-import { IMovie, IMoviesResponse, movies } from './../../helpers/api';
+import {IMovie, IMoviesResponse, movies} from './../../helpers/api';
 
 /* Обработка запроса получения списка фильмом */
-function* GetSearchResultSaga({ payload }: ReturnType<typeof searchActions['get']>) {
+function* GetSearchResultSaga({payload}: ReturnType<typeof searchActions['get']>) {
     try {
         const list: IMovie[] = yield select((store: RootState) => store.search.result);
 

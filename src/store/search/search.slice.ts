@@ -1,6 +1,6 @@
-import { IMoviesRequestParams } from './../../helpers/api/interfaces/movieRequestParams';
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IMovie } from './../../helpers/api/interfaces/movie';
+import {IMoviesRequestParams} from './../../helpers/api/interfaces/movieRequestParams';
+import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {IMovie} from './../../helpers/api/interfaces/movie';
 
 export interface ISearchState {
     searchValue: string;

@@ -19,6 +19,7 @@ import Button from "../../components/Button";
 import ErrorBlock from "../../components/ErrorBlock";
 
 import ImageNotFound from './../../assets/image-2.svg';
+import { useDebounce } from './../../helpers/useDebounce';
 
 import styles from './SearchList.module.scss';
 
@@ -41,8 +42,15 @@ export const SearchList: React.FC = () => {
 
     /* Обработка повторного монтирования компонента */
     const shouldFetchRef = useRef<boolean>(true);
-    /* Таймер */
-    const timerRef = useRef<null | NodeJS.Timeout>(null);
+
+    const handleSearchDb = useDebounce((textSearch: string) => {
+        if (textSearch.length > 3) {
+            handleFetchMoreMovies(textSearch, 1);
+        } else if (!textSearch.length) {
+            dispatch(searchActions.reset());
+            navigate('/');
+        }
+    }, 500);
 
     let navigate = useNavigate();
 
@@ -74,18 +82,7 @@ export const SearchList: React.FC = () => {
         const textSearch  = event.target.value;
         setSearch(textSearch);
 
-        if (timerRef.current) {
-            clearTimeout(timerRef.current);
-        }
-
-        timerRef.current  = setTimeout(() => {
-            if (textSearch.length > 3) {
-                handleFetchMoreMovies(textSearch, 1);
-            } else if (!textSearch.length) {
-                dispatch(searchActions.reset());
-                navigate('/');
-            }
-        }, 500);
+        handleSearchDb(textSearch);
     }
 
     if (!movies) {
@@ -121,7 +118,7 @@ export const SearchList: React.FC = () => {
                 {!error && !!movies.length && (
                     <div className={styles.list}>
                         {movies.map((movie, index) => (
-                            <SearchItem key={movie.id + index} {...movie} />
+                            <SearchItem key={`${movie.id}${index}`} {...movie} />
                         ))}
                     </div>
                 )}

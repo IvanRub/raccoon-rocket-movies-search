@@ -14,8 +14,8 @@ import styles from './AppBar.module.scss';
  * @class
  */
 export default function AppBar() {
-    const { pathname } = useLocation();
-    
+    const {pathname} = useLocation();
+
     const isMatchFavoritesPage = matchPath('favorites', pathname);
     const isMatchHomePage = matchPath('/', pathname);
 
@@ -24,20 +24,24 @@ export default function AppBar() {
     return (
         <div className={styles.appbar}>
             <div>
-                {!isMatchHomePage && (<div className='h1-medium'>ЕнотоКиноПоиск</div>)} 
+                {!isMatchHomePage && (
+                    <Link to='/'>
+                        <div className='h1-medium'>ЕнотоКиноПоиск</div>
+                    </Link>
+                )}
             </div>
-            
+
             {!isMatchFavoritesPage ? (
                 <Link to='/favorites'>
                     <Button>
-                        <img src={Star} alt='Избранное' />
+                        <img src={Star} alt='Избранное'/>
                         Избранное ({countFavorites})
                     </Button>
                 </Link>
             ) : (
                 <Link to='/'>
                     <Button>
-                        <img src={Search} alt='Поиск' />
+                        <img src={Search} alt='Поиск'/>
                         Поиск
                     </Button>
                 </Link>

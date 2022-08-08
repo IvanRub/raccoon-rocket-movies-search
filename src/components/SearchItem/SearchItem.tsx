@@ -6,7 +6,7 @@ import {
     removeFavorite,
  } from '../../store/favorite'
 
-import { IMovie } from './../../helpers/api'
+import { IMovie } from '../../helpers/api'
 
 import ImageDefault from './../../assets/Image.svg'
 import Star from './../../assets/Icon-Wrapper.svg'
@@ -42,7 +42,7 @@ function SearchItem(props: TMovieItem) {
                 <img src={poster?.previewUrl || ImageDefault} alt='' width={112} height={112} />
                 <div className={styles.favoriteButton}>
                     <Button onClick={() => handleToggleBookmark(!favorite)}>
-                        <img src={!!favorite ? StarCheck : Star} alt='' />
+                        <img src={favorite ? StarCheck : Star} alt='' />
                     </Button>
                 </div>
             </div>
